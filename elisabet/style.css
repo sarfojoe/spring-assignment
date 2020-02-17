@@ -20,9 +20,12 @@
     background: rgb(124, 124, 124);
     color: white;
     padding: 20px;
-    padding-left: 50px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .header:nth-child(1) {
+      align-self: center;
   }
 
   .dropbtn {
@@ -31,6 +34,7 @@
     padding: 16px;
     font-size: 16px;
     border: none;
+    border-radius: 5px;
 
   }
 
@@ -72,47 +76,193 @@
 
   #home img {
       width: 250px;
-      flex: 1;
+      display: flex;
+      margin-top: 20px;
+      margin: 20px;
+      
 
   }
 
-  
-  .container {
+.hero {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+}
+/*   .container {
     height: 100%;
     background: url("https://source.unsplash.com/VWcPlbHglYc") no-repeat fixed
       center center/cover;
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    position: relative;
+    flex-direction: row-reverse;
+    align-content: space-around;
+   
+  
+   
     width: 100%;
     padding: 20px;
 
+  } */
+
+  .hero::before {
+    background-image: url("https://source.unsplash.com/VWcPlbHglYc");
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.4;
+  }
+
+  .hero::after {
+      background-color: rgb(46, 141, 117);
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.4; 
+
   }
   
-  .container button {
-    background: hotpink;
-    width: 4rem;
-    height: 2rem;
-    border-radius: 3px;
-  }
-  
-  #skills {
-    background: rgb(196, 195, 195);
-  }
-  
-  #skills img {
-    width: 30vh;
+
+
+
+.slider-wrapper {
+    position: relative;
+    overflow: hidden; /* oversize parts of child elements will be hidden */
+    width: 80%;
+    margin: auto;
     display: flex;
-  }
+    justify-content: space-evenly;
+
+}
+
+
+/* End of image slider */
+
+
+.slider__photo {
+    opacity: 0; 
+    position: absolute; 
+    top: 0;
+    width: 60%; 
+    margin: auto; /* this keeps things centered */
+    padding: 1rem 4rem;
+    z-index: 100; 
+    transition: transform .2s, opacity .2s, z-index .2s;
+    display: flex;
+    justify-content: center;
+}
+
+.slider__photo.initial,
+.slider__photo.active {
+  opacity: 1; /* only elements with active and initial classes will be visible */
+  position: relative;
+  z-index: 900;
+}
+
+.slider__photo.prev,
+.slider__photo.next {
+  z-index: 800;
+}
+.slider__photo.prev {
+  transform: translateX(-100%); 
+}
+.slider__photo.next {
+  transform: translateX(100%);
+}
+
+/* Styling for the prev and next buttons */
+.slider__button--prev,
+.slider__button--next {
+  position: absolute;
+  top:50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFF;
+  transform: translateY(-10%);
+  border-radius: 5%;
+  cursor: pointer; 
+  z-index: 1001; /* Sit on top of everything */
+  border: 1px solid black;
+}
+.slider__button--prev {
+  left:0;
+}
+.slider__button--next {
+  right:0;
+}
+.slider__button--prev::after,
+.slider__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
   
-  footer {
+}
+.slider__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+  
+   footer {
     background: grey;
     color: white;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5rem;
+  } 
+
+  .contact img {
+      width: 60%;
+      padding-left: 20px;
   }
-  
+
+
+   .contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 20px;
+    line-height: 1.5rem;
+   
+     
+  } 
+
+  .contact p {
+      margin-top: 2rem;
+  }
+
+  .contact a {
+    
+     color: rgb(113, 238, 145);
+     text-decoration: none;
+
+  }
+
+  .contact a:hover {
+      text-decoration: underline;
+
+  }
