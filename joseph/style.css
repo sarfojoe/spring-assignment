@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    display: flex;
+    background-color: black;
+  }
+  .logo {
+    color: cornsilk;
+  }
+  .container {
+    background-image: url("laptop2.webp");
+    height: 400px;
+    width: auto;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .text {
+    color: cornsilk;
+    margin-left: 30px;
+  }
+  .btn-readmore {
+    color: darkcyan;
+    
+  }
+  #section {
+    height: 50px;
+    width: 100px;
+    background: #333;
+    position: relative;
+  }
+  #section-a {
+    display: flex;
+  }
+  .image2 {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  ul {
+    margin-left: 2rem;
+  }
+  .text1 {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  
+  .text3 {
+    margin-left: 20px;
+  }
+  .fonts {
+    border: 1px solid rgba(255, 255, 255, 0.021);
+    border-collapse: separate;
+    display: flex;
+    padding: 10px;
+    margin: 15px;
+  }
+  .fonts1 {
+    margin-right: 10px;
+    background: rgba(255, 255, 254, 254);
+    text-align: center;
+    padding: 30px;
+  }
+  .fonts2 {
+    margin-right: 10px;
+    background: rgba(255, 255, 254, 254);
+    text-align: center;
+    padding: 30px;
+  }
+  .fonts3 {
+    margin-right: 10px;
+    background: rgba(255, 255, 254, 254);
+    text-align: center;
+    padding: 30px;
+  }
+  .fonts4 {
+    margin-right: 10px;
+    background: rgba(255, 255, 254, 254);
+    text-align: center;
+    padding: 30px;
+  }
+  .footer {
+    background: black;
+    color: #fff;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .text4 {
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-right: 100px;
+  }
+  .text5 {
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-right: 100px;
+  }
+  .contact {
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  
+  body {
+      background: wheat;
+  }
+  @media screen and (min-width: 250px) {
+      body {
+          background: green;
+      }
+  }
+  @media screen and (min-width: 500px) {
+      body {
+          background: blueviolet;
+      }
+  }
+  @media screen and (min-width: 750px) {
+      body {
+          background: yellowgreen;
+      }
+  }
+  @media screen and (min-width: 1000px) {
+      body {
+          background: papayawhip;
+      }
+  }
+  
