@@ -43,6 +43,11 @@
     initSlider();
 })();
 
+
+
+
+
+
 jQuery(document).ready(function() {
   var btn = $('#button');
   $(window).scroll(function() {
