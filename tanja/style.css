@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    line-height: 1.6rem;
+}
+
+header {
+    background-color: steelblue;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 16vh;
+    width: 100%;
+    z-index: 10;
+    max-width: 1200px;
+    opacity: 0.95;
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 6vh 3vw;
+    overflow: hidden;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 2vh;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: black;
+    border-bottom: 1vh dotted black;
+}
+
+#hero_banner {
+    background-color: wheat;
+    background-image: url('Banner.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    max-width: 1200px;
+}
