@@ -27,6 +27,7 @@
                 <h1>About Tanja Lehtinen</h1>
                 <p>Welcome to my web site!</p>
                 <p>My name is Tanja Lehtinen. At the moment, I study Full Stack Web Development full-time in Business College Helsinki. To be able to do that I am on a study leave from my work as a team lead.</p>
+                <button id="print_btn">Print my CV</button>
             </div>
         </section>
         <section id="education" class="container">
@@ -81,9 +82,10 @@
         </section>
         <section id="image_slider" class="container">
             <div id="image_container">
-                <img class="my_slides" src="nyrkkeily.jpg">
-                <img class="my_slides" src="bali.jpg">
-                <img class="my_slides" src="Tanja_samba_sm.jpg">
+                <img class="my_slides" src="taekwondo.jpeg" alt="After having my yellow belt in taekwondo">
+                <img class="my_slides" src="nyrkkeily.jpg" alt="In a boxing lesson">
+                <img class="my_slides" src="hanko.jpeg" alt="The sea in Hanko, Finland">
+                <img class="my_slides" src="sheep.jpeg" alt="Feedins sheeps">
             </div>
         </section>
     </main>
@@ -95,9 +97,8 @@
                 <li><p>linkedin: linkedin.com/in/tanja-lehtinen-3b692019b</p></li>
                 <li><p>github: maaliskesakuu</p></li>
         </ul>
+        <button onclick="topFunction()" id="to_top_btn"><i class="fa fa-angle-up fa-2x"></i></button>
         </section>
-        <button onclick="topFunction()" id="to_top_btn"><i class="fa fa-angle-up fa-4x"></i></button>
-        <button id="print_btn">Print my CV</button>
     </footer>
     <script>
         var slideIndex = 0;
@@ -124,7 +125,7 @@
     };
     
     function scrollFunction () {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             btn.style.display = "block";
         } else {
             btn.style.display = "none";
