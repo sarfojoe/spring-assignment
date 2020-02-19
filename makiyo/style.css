@@ -49,6 +49,8 @@ html{
     text-align: center;
   }
 
+  /* Navigation bar */
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -84,8 +86,9 @@ header {
     position: absolute;
     right: -100%;
     top: 70px;
-    width: 50%;
-    height: calc(100% - 70px);
+    display: none;
+    width: 30%;
+    height: calc(100% - 300px);
     flex-direction: column;
     justify-content: space-around;
     padding: 0;
@@ -95,12 +98,15 @@ header {
 .navlink {
   text-align: center;  
   list-style: none;
+  padding: 5px;
+  margin: 10px;
+  color: #ccc;
 }
 
 .navlink a {
-    color: #000000;
+    color: #ccc;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1rem;
 }
 
 .nav-active {
@@ -114,13 +120,20 @@ header {
 /* Hero-banner */
 
 .hero-banner {
-    background-color: #B2D6FF;
+    background-color: #FFFAFA;
   }
+
+#about img{
+  width: 20%;
+  height: auto;
+  display: flex;
+  text-align: center;
+}
   
 /* Main */
 
 .content {
-    background-color: #EAEDF0;
+    background-color: #F5CF8E;
     height: 300px;
     order: 2;
   }
@@ -130,19 +143,41 @@ header {
     height: 300px;
     order: 1;
   }
-  
+
+/* Skills Education Work */
+
+.box{
+  padding: 0.5em;
+  margin: 2em 2em;
+  border: solid 3px #000000;
+  font-weight: bold;
+}
+
+.box p{
+  margin: 0; 
+  padding: 0
+}
+
 .feature-1 {
-    background-color: #F5CF8E;
+    background-color: #FFFAFA;
     height: 600px;
   }
-  
+
+#skill{
+  background-color: #B2D6FF;
+}
+
+#skill:hover{
+    background-color: #A9A9A9;
+    
+    }  
 .feature-2 {
-    background-color: #F09A9D;
+    background-color: #FFFAFA;
     height: 600px;
   }
   
 .feature-3 {
-    background-color: #C8C6FA;
+    background-color: #FFFAFA;
     height: 600px;
   }
 
@@ -151,6 +186,62 @@ header {
     height: 600px;
   }
 
+ /* Project pop-up window */
+
+ #pop-up{
+   display:none;
+   position: relative;
+   z-index: 1;
+   padding: 50px 0 50px 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: #FFFAFA;
+   background-color: #B2D6FF;
+ }
+
+ .modal{
+   display: flex;
+ }
+
+ #projectBtn{
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #000000;
+  border: solid 3px #000000;
+  border-radius: 3px;
+  transition: .4s;
+  cursor: pointer;
+ }
+
+ #projectBtn:hover{
+  background: #67c5ff;
+  color: white;
+ }
+
+ .modal-content{
+   background-color: #fefefe;
+   margin: auto;
+   padding: 20px;
+   border: solid 3px #000000;
+   width: 50%;
+ }
+
+ .close{
+   color: #aaaaaa;
+   font-size: 2em;
+   font-weight: bold;
+ }
+
+ .close:hover,
+ .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
   /* Mobile version */
   @media only screen and (max-width: 400px) {
@@ -181,9 +272,24 @@ header {
     .feature-3, 
     .feature-4{
       width: 25%;
+
     }
     .hero-banner {
       height: 400px;
+    }
+
+    #pop-up{
+      display:none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: #FFFAFA;
+      background-color: #B2D6FF;
     }
   }
 
@@ -195,18 +301,21 @@ header {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      background: #FFFAFA;
+      background: #B2D6FF;
       color: #000000;
   }
-  .logo{
-    
-  }
+
     .nav {
-      width: 100%;
+      width: 70%;
       height: 70px;
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-evenly;
+      flex-direction: row;
+      position: static;
+      margin: 0;
+      background-color: transparent;
+  
     }
     .navlink {
       list-style: none;
@@ -214,10 +323,11 @@ header {
     }
 
     .navlink a {
-      color: #ccc;
+      color: #000000;
       text-decoration: none;
-      
-      }
+      text-transform: uppercase;
+    }
+
     .burger {
         font-size: 1.2em;
         display: none;

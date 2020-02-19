@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
         integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
@@ -12,32 +13,42 @@
 
 <body>
 
-    <!-- scroll top butoon -->
+    <!-- Scroll top button -->
     <div id="page_top"><a href="#"></a></div>
 
     <div class="wrapper">
         <header id="section">
+
+            <!-- Menu & navigation bar -->
             <h1 class="logo">LOGO</h1>
             <ul class="nav">
                 <li class="navlink"><a href="#page_top">Home</a></li>
                 <li class="navlink"><a href="#about">About</a></li>
-                <li class="navlink"><a href="#">Skills</a></li>
-                <li class="navlink"><a href="#">Projects</a></li>
-                <li class="navlink"><a href="#">Contact</a></li>
+                <li class="navlink"><a href="#skills">Skills</a></li>
+                <li class="navlink"><a href="#project">Projects</a></li>
+                <li class="navlink"><a href="#contact">Contact</a></li>
             </ul>
             <div class="burger">
                 <i class="fas fa-bars"></i>
             </div>
         </header>
+
+        <!-- Hero banner -->
         <div class="section hero-banner">
             <div id="about">
                 <h1>Welcome to my website!</h1>
+                <img src="photo/makiyo.png">
             </div>
         </div>
 
-
+        <!-- Photo slider -->
         <div class="section content">
-
+            <div class="photo-slider">
+                <div><img src="photo/"></div>
+                <div><img src="photo/"></div>
+                <div><img src="photo/"></div>
+                <div><img src="photo/"></div>
+            </div>
         </div>
         <div class="section contact">
             <div id="contact">
@@ -45,35 +56,61 @@
             </div>
         </div>
         <div class="section feature-1">
-            <div id="skills">
-                <p>My Skills</p>
+            <div class="box" id="skills">
+                <button id="">Skills</button>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem error nemo ratione beatae minus
                     doloremque natus vero incidunt accusantium ab recusandae repellendus modi cupiditate porro, pariatur
                     eveniet placeat debitis dignissimos.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis aperiam temporibus laudantium
                     minus commodi, vitae fugit exercitationem harum nemo quod expedita nobis doloremque soluta doloribus
                     necessitatibus sapiente! Ratione, culpa minima?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cum iste vel nulla explicabo deleniti
-                    non repellat praesentium, adipisci quae cupiditate quo doloribus sunt ducimus aperiam sit est cumque
-                    autem?</p>
+                </p>
             </div>
         </div>
         <div class="section feature-2">
-            <div id="workexperience">
-                <p>Work Experience</p>
+            <div class="box" id="workexperience">
+                <button id="">Work Experience</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem error nemo ratione beatae minus
+                    doloremque natus vero incidunt accusantium ab recusandae repellendus modi cupiditate porro, pariatur
+                    eveniet placeat debitis dignissimos.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis aperiam temporibus laudantium
+                    minus commodi, vitae fugit exercitationem harum nemo quod expedita nobis doloremque soluta doloribus
+                    necessitatibus sapiente! Ratione, culpa minima?
+                </p>
             </div>
         </div>
         <div class="section feature-3">
-            <div id="education">
-                <p>Education</p>
+            <div class="box" id="education">
+                <button id="">Education</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem error nemo ratione beatae minus
+                    doloremque natus vero incidunt accusantium ab recusandae repellendus modi cupiditate porro, pariatur
+                    eveniet placeat debitis dignissimos.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis aperiam temporibus laudantium
+                    minus commodi, vitae fugit exercitationem harum nemo quod expedita nobis doloremque soluta doloribus
+                    necessitatibus sapiente! Ratione, culpa minima?
+                </p>
             </div>
         </div>
         <div class="section feature-4">
-            <div id="project">
-                <p>Projects</p>
+            <div class="box" id="project">
+                <button id="projectBtn">Open My Project</button>
+                <div id="pop-up" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Please click here to see my project at Github!</p>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem error nemo ratione beatae minus
+                    doloremque natus vero incidunt accusantium ab recusandae repellendus modi cupiditate porro, pariatur
+                    eveniet placeat debitis dignissimos.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis aperiam temporibus laudantium
+                    minus commodi, vitae fugit exercitationem harum nemo quod expedita nobis doloremque soluta doloribus
+                    necessitatibus sapiente! Ratione, culpa minima?
+                </p>
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 
