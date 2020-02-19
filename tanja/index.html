@@ -96,7 +96,7 @@
                 <li><p>github: maaliskesakuu</p></li>
         </ul>
         </section>
-        <button id="to_top_btn"><i class="fa fa-angle-up fa-4x"></i></button>
+        <button onclick="topFunction()" id="to_top_btn"><i class="fa fa-angle-up fa-4x"></i></button>
         <button id="print_btn">Print my CV</button>
     </footer>
     <script>
@@ -116,5 +116,25 @@
                 setTimeout(carousel, 5000);
         }
     </script>
+    <script>
+        btn = document.getElementById("to_top_btn");
+    
+    window.onscroll = function() {
+        scrollFunction()
+    };
+    
+    function scrollFunction () {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    }
+    
+    function topFunction() {
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
 </body>
 </html>
