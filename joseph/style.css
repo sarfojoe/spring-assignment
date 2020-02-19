@@ -10,8 +10,8 @@
     color: cornsilk;
   }
   .container {
-    background-image: url("laptop2.webp");
-    height: 400px;
+    background-image: url("africa1.webp");
+    height: 300px;
     width: auto;
     background-color: #333;
     display: flex;
@@ -22,9 +22,10 @@
     color: cornsilk;
     margin-left: 30px;
   }
-  .btn-readmore {
+  .btn-readMore {
     color: darkcyan;
-    
+    margin-left: 30px;
+    padding-top: 2rem;
   }
   #section {
     height: 50px;
