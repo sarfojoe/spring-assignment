@@ -1,8 +1,8 @@
-/* Navigation bar */
-// Selection of HTML objects
+/* Nav bar */
+
 var burger = document.querySelector('.burger i');
 var nav = document.querySelector('.nav');
-
+// Defining a function
 function toggleNav() {
     burger.classList.toggle('fa-bars');
     burger.classList.toggle('fa-times');
@@ -11,9 +11,9 @@ function toggleNav() {
 // Calling the function after click event occurs
 burger.addEventListener('click', function () {
     toggleNav();
-    document.querySelector('.nav-active').style.display = 'block';
 });
 
+s
 /* Pop-up window on Project card */
 
 var modal = document.getElementById('pop-up');
