@@ -104,7 +104,7 @@
     color: white;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 20px;
 }
 
@@ -159,7 +159,9 @@
 
 /* End of image slider */
 
-
+.slider img {
+  width: 60%;
+}
 .slider__photo {
     opacity: 0; 
     position: absolute; 
@@ -168,7 +170,7 @@
     margin: auto; /* this keeps things centered */
     padding: 1rem 4rem;
     z-index: 100; 
-    transition: transform .2s, opacity .2s, z-index .2s;
+    transition: transform .5s, opacity .2s, z-index .5s;
     display: flex;
     justify-content: center;
 }
@@ -240,7 +242,19 @@
   background: rosybrown;
  
 }
-  
+
+.caption {
+  font-family: Arial, Helvetica, sans-serif;
+  color: hotpink;
+  font-size: x-large;
+  margin-left: 20px;
+  position: relative;
+  height: 20vh;
+  width: 20vh;
+  background: yellow;
+  border: 0.5px
+}
+
 footer {
   background: grey;
   color: white;
@@ -250,7 +264,7 @@ footer {
 } 
 
 .contact img {
-    width: 40vw;
+    width: 30vw;
     padding-left: 20px;
      
 }
@@ -278,6 +292,15 @@ footer {
 .contact a:hover {
   text-decoration: underline;
 
+}
+
+.contact-txt {
+  width: 30vh;
+  height: 20vh;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 5px;
 }
 
 .scroll-top-btn {
