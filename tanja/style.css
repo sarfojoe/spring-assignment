@@ -63,7 +63,7 @@ nav ul li a:hover {
 }
 
 #about_me {
-    height: 50vh;
+    /* height: 50vh; */
     width: 100%;
     position: relative;
 }
@@ -89,8 +89,12 @@ p {
     padding-bottom: 2vh;
 }
 
+h3 {
+    padding-top: 3vh;
+}
+
 #education {
-    height: 55vh;
+    /* height: 55vh; */
     width: 100%;
     position: relative;
 }
@@ -117,6 +121,7 @@ p {
 }
 
 #bc, #university {
+    flex: 1;
     background-color: linen;
     display: block;
     padding: 2vh 2vw;
@@ -128,13 +133,9 @@ p {
 }
 
 #work_experience {
-    height: 130vh;
+    /* height: 140vh; */
     width: 100%;
     position: relative;
-}
-
-#work_experience h2 {
-    padding-bottom: 0;
 }
 
 #work_container {
@@ -153,10 +154,10 @@ p {
 ul.resume {
     display: block;
     list-style-type: none;
-}
-
-ul.resume li h3 {
-    padding-top: 4vh;
+    background-color: linen;
+    display: block;
+    padding: 2vh 2vw;
+    border-radius: 5px;
 }
 
 #image_slider {
@@ -173,15 +174,14 @@ ul.resume li h3 {
     height: 100%;
     position: relative;
     margin: 10vh 10vw;
-    padding: 20vh; 
-    background-color: white;
-    border-radius: 5px;
-    border: 1rem solid linen;
+    padding: 20vh 20vw; 
 }
 
 .my_slides {
     width: 100%;
     max-width: 960px;
+    height: auto;
+    min-width: 300px;
 }
 
 footer {
@@ -210,7 +210,7 @@ footer {
 }
 
 #print_btn {
-    background-color: white;
+    background-color: lightgrey;
     width: 12vw;
     height: auto;
     text-align: center;
@@ -225,12 +225,12 @@ footer {
 
 #print_btn:hover {
     cursor: pointer;
-    background-color: whitesmoke;
+    background-color: steelblue;
 }
 
 #to_top_btn {
     display: none;
-    background-color: white;
+    background-color: lightgray;
     width: 5vw;
     height: 5vh;
     text-align: center;
