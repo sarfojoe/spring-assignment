@@ -31,7 +31,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding: 6vh 3vw;
+    padding: 9.5vh 2vw 2.5vh;
 }
 
 nav ul li a {
@@ -44,7 +44,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: black;
-    border-bottom: 1vh dotted black;
+    border-bottom: 0.9vh dotted black;
 }
 
 #hero_banner {
@@ -94,7 +94,6 @@ h3 {
 }
 
 #education {
-    /* height: 55vh; */
     width: 100%;
     position: relative;
 }
@@ -207,16 +206,39 @@ footer {
 #contact li {
     display: block;
     list-style-type: none;
-    line-height: 2rem;
+    line-height: 3rem;
 }    
 
 #contact li > p {
     padding-bottom: 0;
 }
 
+#contact_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+#mail, #map {
+    flex: 1;
+    display: block;
+    padding: 2vh 2vw;
+}
+
+#mail {
+    margin-right: 2vw;
+}
+
 #mail a {
     text-decoration: none;
     color: white;
+}
+
+#mail a:hover {
+    text-decoration: none;
+    color: lightgrey;
 }
 
 #mail a:active {
@@ -235,6 +257,7 @@ footer {
     color: black;
     font-weight: normal;
     font-size: 1.2rem;
+    padding: 1rem;
 }
 
 #print_btn:hover {
