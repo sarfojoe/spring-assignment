@@ -61,10 +61,10 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(192, 189, 189);
+    background-color: rgb(248, 242, 242);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
     z-index: 1;
-    border-radius: 3px;
+    border-radius: 4px;
   }
   
   /* Links inside the dropdown */
@@ -84,18 +84,16 @@
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
-  #home img {
+   #home img {
       width: 35vh;
-      display: flex;
-      margin: 20px;
+      display: flex;     
       border-radius: 5px;
       border: solid 1px black;
-      position: relative;
-      
+    
+   
+  } 
 
-  }
-
-.hero {
+ .hero {
     width: 100%;
     height: 100%;
     min-width: 100%;
@@ -106,7 +104,7 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     padding: 20px;
-}
+} 
 
 
   .hero::before {
@@ -135,10 +133,10 @@
       z-index: -1;
       opacity: 0.4; 
 
-  }
+  } 
 
-.about {
-  padding: 3rem;
+#about {
+  padding: 1rem;
 
   }
   
@@ -166,13 +164,14 @@
     opacity: 0; 
     position: absolute; 
     top: 0;
-    width: 60%; 
+    width: 70%; 
     margin: auto; /* this keeps things centered */
     padding: 1rem 4rem;
     z-index: 100; 
     transition: transform .5s, opacity .2s, z-index .5s;
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
 }
 
 .slider__photo.initial,
@@ -197,7 +196,7 @@
 .slider__button--prev,
 .slider__button--next {
   position: absolute;
-  top:50%;
+  top:20vh;
   width: 3rem;
   height: 3rem;
   background-color: #FFF;
@@ -245,15 +244,19 @@
 
 .caption {
   font-family: Arial, Helvetica, sans-serif;
-  color: hotpink;
-  font-size: x-large;
+  padding: 5px;
+  line-height: 1.2rem;
   margin-left: 20px;
+  margin-right: 20px;
   position: relative;
-  height: 20vh;
-  width: 20vh;
-  background: yellow;
-  border: 0.5px
+  border-bottom: 0.5px solid grey;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex:1;
+  
 }
+
 
 footer {
   background: grey;
@@ -263,45 +266,50 @@ footer {
    
 } 
 
-.contact img {
-    width: 30vw;
-    padding-left: 20px;
+#contact img {
+    width: 30vh;
+ 
+    margin: 1rem;
      
 }
 
-.contact {
+#contact {
   display: flex;
- justify-content: center;
- flex-direction: row-reverse;
+  justify-content: center;
+  flex-direction: row-reverse;
   line-height: 1.5rem;
   padding: 40px;
  
-  
 } 
 
-.contact p {
+#contact p {
    margin-top: 2rem;
 }
 
-.contact a {    
+#contact a {    
   color: rgb(113, 238, 145);
   text-decoration: none;
 
 }
 
-.contact a:hover {
+#contact a:hover {
   text-decoration: underline;
 
 }
 
 .contact-txt {
   width: 30vh;
-  height: 20vh;
-  border: 1px solid black;
-  text-align: center;
-  padding-top: 20px;
+ border: 1px black solid;
+  color: rgb(199, 217, 235);
   border-radius: 5px;
+  margin: 1rem;
+  text-align: center;
+  padding: 10px;
+
+
 }
+
+
 
 .scroll-top-btn {
   display: inline-block;

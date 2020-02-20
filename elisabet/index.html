@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Half-way test</title>
+    <title>Portfolio</title>
   </head>
   <main>
   <body>
@@ -24,7 +24,8 @@
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
           <li><a href="#home">Who am I?</a></li>
-          <li><a href="#img-slider">Link 2</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#img-slider">Image slider</a></li>
           <li><a href="#contact">Contact</a></li>
         </div>
       </div>
@@ -34,7 +35,7 @@
       <section id="home">
         <div class="hero" data-aos="fade-right">          
           <div data-aos="fade-left">
-          <img class="mypic" src="images/img_1.jpg" alt="My picture"></div><br>
+          <img class="mypic" src="images/img_1.jpg" alt="My picture"></div>
            <div class="profile_text" data-aos="fade-right" data-aos-delay="50">
            <h2>Elisabet Laitinen, Full Stack Web Developer student</h2> <br><br>
             <h3>Education</h3><br>
@@ -53,40 +54,51 @@
                 2013 (summer job)<br><br>
             Nurse, Lastenklinikka <br>
                 Pediatric heart diseases <br>
-                2011 (summer job)<br><br>
+                2011 (summer job)<br>
+        
             </div>
         </div>
       </section>
       <section>
-        <div class="about" data-aos="fade-right">
+        <div id="about" data-aos="fade-right">
           <h3>About me</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum eius consectetur repellendus iure voluptatem fugiat cumque reiciendis maiores! Distinctio perferendis ad fuga laudantium a aliquam quaerat. Officiis eos, ipsam ad ducimus hic rem, at temporibus exercitationem reiciendis repellat commodi voluptatem corrupti facere doloribus laboriosam alias ab reprehenderit dignissimos, nobis suscipit impedit quisquam. Magni amet aliquam perspiciatis ipsa blanditiis dignissimos?</p>
         </div>
       </section>
     <section id="img-slider">
-        <div class="slider-wrapper" data-aos="fade-left">
+        <div class="slider-wrapper">
             <div class="slider">
              <div class="slider__photo active"> <img  src="images/vaalit.jpg" />
-            <div class ="caption" data-aos="fade-left" data-aos-delay="60"> <p>"World's best school". Campaigning for the municipal elections in 2017.</p></div>
+            <div class ="caption" data-aos="fade-left" data-aos-delay="60"> <p>"World's best school". Campaigning for the Municipal elections in 2017.</p></div>
           </div>
-              <div class="slider__photo"><img src="images/nuuksio_3.jpg" />
-              <div class ="caption"> <p> test test testingg</p></div>
+              <div class="slider__photo"><div class ="caption" > 
+                <p>Nuuksio National Park, Espoo. There's nothing more relaxing than spending a night in the woods, sleeping in a tent and cooking your dinner on open fire.</p></div>
+                <img src="images/nuuksio_3.jpg" />
+              
             </div>
               <div class="slider__photo"><img  src="images/työ_2.jpg" />  
-                <div class ="caption"> <p> Getting ready for baby-catching!</p></div>
-              </div>          
+                <div class ="caption"> <p> Getting ready for delivering babies!</p></div>
+              </div> 
+            
+              <div class="slider__photo"><img src="images/rooma.jpg" />  
+                <div class ="caption"> <p>I'm a huge fan of history, and finally visiting Rome, after dreaming about it for 15+ years, was a wonderful experience.</p></div>
+              </div> 
+              <div class="slider__photo"><div class ="caption"> 
+              <p>Campaigning again, this time it was the Parliamentary elections in 2019.</p></div> <img src="images/vaalit19.jpg" />
+                
+              </div>         
               <div class="slider__button--next"></div>
               <div class="slider__button--prev"></div>
             </div>
           </div>
       </section>   
       <footer>
-        <div id="contact" class="contact" data-aos="fade-right">
+        <div id="contact" data-aos="fade-right">
         <div>
             <img src="https://source.unsplash.com/71CjSSB83Wo"></div>
         <div class="contact-txt"data-aos="fade-right" data-aos-delay="100"> 
-          <h3>Contact</h3>
-           <p> Email me at <a href = "mailto: elisabet.laitinen@edu.bc.fi"> elisabet.laitinen@edu.bc.fi</a> <br><br>
+          <h3>Contact</h3> 
+           <p> Email me at <a href = "mailto: elisabet.laitinen@edu.bc.fi"> elisabet.laitinen@edu.bc.fi</a> <br> <br>
           Connect in <a href="linkedin.com/in/elisabet-laitinen-b9a56019b">LinkedIn</a></p>
            </div>
         </div>
