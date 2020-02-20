@@ -19,7 +19,7 @@ header {
     position: sticky;
     top: 0;
     left: 0;
-    height: 16vh;
+    height: 15vh;
     width: 100%;
     z-index: 10;
 }
@@ -31,20 +31,20 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding: 9.5vh 2vw 2.5vh;
+    padding: 9.5vh 2vw 2vh;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    padding-bottom: 2vh;
+    padding-bottom: 1.5vh;
     font-weight: bold;
 }
 
 nav ul li a:hover {
     color: black;
-    border-bottom: 0.9vh dotted black;
+    border-bottom: 0.5vh solid black;
 }
 
 #hero_banner {
@@ -76,7 +76,7 @@ nav ul li a:hover {
     height: 100%;
     position: relative;
     margin: 10vh 10vw;
-    padding: 15vh 5vw;
+    padding: 15vh;
     background-color: linen;
     border-radius: 5px;
 }
@@ -106,7 +106,7 @@ h3 {
     height: 100%;
     position: relative;
     margin: 10vh 10vw;
-    padding: 15vh 5vw;
+    padding: 15vh;
     background-color: lightsteelblue;
     border-radius: 5px;   
 }
@@ -145,7 +145,7 @@ h3 {
     height: 100%;
     position: relative;
     margin: 10vh 10vw;
-    padding: 15vh 5vw;
+    padding: 15vh;
     background-color: lightsteelblue;
     border-radius: 5px;  
 }
@@ -196,11 +196,10 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     height: 100%;
     position: relative;
     margin: 10vh 10vw 0;
-    padding: 15vh 5vw;
+    padding: 15vh;
 }
 
 #contact li {
@@ -224,11 +223,10 @@ footer {
 #mail, #map {
     flex: 1;
     display: block;
-    padding: 2vh 2vw;
 }
 
 #mail {
-    margin-right: 2vw;
+    padding-right: 2vw;
 }
 
 #mail a {
@@ -284,4 +282,10 @@ footer {
 #to_top_btn:hover {
     cursor: pointer;
     background-color: steelblue;
+}
+
+@media screen and (max-width: 768px) {
+    container {
+        width: 100vw;
+    }
 }
