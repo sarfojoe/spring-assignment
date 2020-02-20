@@ -5,6 +5,7 @@
   .header {
     display: flex;
     background-color: black;
+    padding: 0;
   }
   .logo {
     color: cornsilk;
@@ -13,14 +14,14 @@
     
     height: 200px;
     width: auto;
-    background-color: #333;
+  
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
 
   .slider {
-    width: 100%;
+    width: 90%;
     height: 400px;
     box-shadow: 10px 5px 5px grey;
     margin-left: 50px;
@@ -37,7 +38,7 @@
    
   }
   .text {
-    color: cornsilk;
+    color: black;
     margin-left: 30px;
   }
   .btn-readMore {
@@ -126,8 +127,39 @@
     margin-top: 50px;
     margin-right: 50px;
   }
+
+
+  .fixed-button {
+    display: inline-block;
+    background-color: rgb(0, 174, 255);  
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;   
+    transition: background-color .3s;
+    z-index: 1000;
+}
+
+.scroll-top-btn {
+    right: 30px;
+    width: 50px;
+}
+
+.scroll-top-btn::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+
   
-  body {
+body {
       background: wheat;
   }
   @media screen and (min-width: 250px) {

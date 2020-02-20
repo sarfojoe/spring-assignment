@@ -10,10 +10,22 @@
 </head>
 <body>
     <header class="header"> 
+        <a id="button" class="fixed-button scroll-top-btn"></a>
         <div class="logo">
             <h1>My portfolio</h1>
         </div> 
-        <div class="nav"></div>   
+        <div class="nav">
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+        
+                </button>
+                <div class="dropdown-menu dropdown-menu-lg-right">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Something else here</button>
+                </div>
+              </div>
+        </div>   
     </header>
     <section>  
         <div class="slider">
@@ -24,7 +36,7 @@
         <div class="container">
         <div class="top-left">  
         </div>
-        <div class="text"> <h1>Lorem ipsum dolor sit amet.</h1></div> 
+        <div class="text"> <h1>The Rising of a Great Software Developer.</h1></div> 
         <div class="text">
             <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
         </div>
@@ -110,5 +122,6 @@
         </form>
     </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="script.js"></script>
 </html>

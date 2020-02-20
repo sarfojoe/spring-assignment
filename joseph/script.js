@@ -10,3 +10,21 @@ function slide (){
     img.innerHTML = "<img src="+images[x-1]+">";
 }
 setInterval(slide, 3000);
+
+jQuery(document).ready(function () {
+
+    var btn = $('#button');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+})    
