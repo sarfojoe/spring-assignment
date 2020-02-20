@@ -23,6 +23,7 @@
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1px;
   }
 
   .header:nth-child(1) {
@@ -137,20 +138,46 @@
 
 #about {
   padding: 1rem;
+  background: whitesmoke;
+  color: rgb(78, 76, 76);
+  margin-top: 1px;
+  margin-bottom: 1px;
 
   }
-  
 
+#about h3 {
+  padding-bottom: 1rem;
+}
+
+.studies {
+  display: flex;
+  flex-direction: row;
+  padding-left: 2rem;
+  margin: 3rem;
+  justify-content: space-around;
+  
+}
+  
+.studies li {
+  list-style: circle;
+  list-style-position: inside;
+}
+
+#about a {
+  color: rgb(167, 4, 4);
+  text-decoration: none;
+}
 
 .slider-wrapper {
     position: relative;
-    overflow: hidden; /* oversize parts of child elements will be hidden */
+    overflow: hidden; 
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
-    background: whitesmoke;
-    height: 100%;
+    background: rgba(226, 206, 206, 0.89);
+    height: 50%;
+    margin-bottom: 1px;
 
 }
 
@@ -159,13 +186,14 @@
 
 .slider img {
   width: 60%;
+  border: 0.5px solid grey;
 }
 .slider__photo {
     opacity: 0; 
     position: absolute; 
     top: 0;
     width: 70%; 
-    margin: auto; /* this keeps things centered */
+    margin: auto; 
     padding: 1rem 4rem;
     z-index: 100; 
     transition: transform .5s, opacity .2s, z-index .5s;
@@ -176,7 +204,7 @@
 
 .slider__photo.initial,
 .slider__photo.active {
-  opacity: 1; /* only elements with active and initial classes will be visible */
+  opacity: 1; 
   position: relative;
   z-index: 900;
 }
@@ -196,10 +224,10 @@
 .slider__button--prev,
 .slider__button--next {
   position: absolute;
-  top:20vh;
+  top:15vh;
   width: 3rem;
   height: 3rem;
-  background-color: #FFF;
+  background-color: grey;
   transform: translateY(-10%);
   border-radius: 5%;
   cursor: pointer; 
@@ -244,6 +272,7 @@
 
 .caption {
   font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.788);
   padding: 5px;
   line-height: 1.2rem;
   margin-left: 20px;
@@ -299,9 +328,9 @@ footer {
 
 .contact-txt {
   width: 30vh;
- border: 1px black solid;
-  color: rgb(199, 217, 235);
-  border-radius: 5px;
+ border-bottom: 1px black solid;
+ border-top: 1px black solid;
+  color: rgb(199, 217, 235);  
   margin: 1rem;
   text-align: center;
   padding: 10px;
