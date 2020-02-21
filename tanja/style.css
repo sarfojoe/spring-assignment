@@ -280,14 +280,42 @@ footer {
     background-color: steelblue;
 }
 
-@media (max-width: 320px) {
+/* iPads */
+@media only screen and (min-width: 768px) and (max-device-width: 1024px) {
+
     header {
-        position: static;
-        height: 20vh;
+        height: 6vh;
     }
 
-    h1, h2, h3, p, a {
+    nav ul li {
+        padding: 2vh 2vw;
+    }
+
+    #hero_banner {
+        height: 25vh;
+    }
+
+    #edu_container {
+        display: block;
+    }
+
+    #bc {
+        margin-right: 0;
+        margin-bottom: 1vh;
+
+    }
+}
+
+@media (max-width: 320px) {
+
+    header {
+        position: static;
+        height: 10vh;
+    }
+
+    h1, h2, h3, p, a, #map {
         margin-left: 2vw;
+        margin-right: 2vw;
     }
 
     .container {
@@ -295,7 +323,7 @@ footer {
     }
 
     nav ul li {
-        display: block;
+        display: inline-block;
         padding: 0.3vh;
     }
 
@@ -357,19 +385,20 @@ footer {
         padding-right: 0;
     }
 
-    #map {
-        display: none;
+    #contact_container {
+        display: block;
     }
 
     #to_top_btn {
         width: 8vw;
+        right: 5%;
     }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 321px) and (max-width: 767px) {
     header {
         position: static;
-        height: 20vh;
+        height: 10vh;
     }
 
     h1, h2, h3, p, a, #map {
@@ -378,7 +407,7 @@ footer {
     }
 
     nav ul li {
-        display: block;
+        display: inline-block;
         padding: 0.3vh;
     }
 
@@ -447,11 +476,4 @@ footer {
     #to_top_btn {
         width: 8vw;
     }
-
 }
-
-/* @media only screen and (min-width: 768px) {
-    container {
-        width: 100vw;
-    }
-} */
