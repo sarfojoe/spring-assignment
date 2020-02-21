@@ -190,20 +190,19 @@
 /* End of image slider */
 
 .slider img {
-  width: 60%;
+  height: 50vh;
   border: 0.5px solid grey;
 }
 .slider__photo {
     opacity: 0; 
     position: absolute; 
-    top: 0;
-    width: 70%; 
-    margin: auto; 
-    padding: 1rem 2rem;
+    top: 0; 
+    padding-left: 5rem;
+    padding-right: 5em;
     z-index: 100; 
     transition: transform .5s, opacity .2s, z-index .5s;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex: 1;
 }
 
@@ -229,7 +228,7 @@
 .slider__button--prev,
 .slider__button--next {
   position: absolute;
-  top:15vh;
+  top:40%;
   width: 3rem;
   height: 3rem;
   background-color: grey;
