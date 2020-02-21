@@ -97,10 +97,11 @@
                 <li><p>linkedin: linkedin.com/in/tanja-lehtinen-3b692019b</p></li>
                 <li><p>github: maaliskesakuu</p></li>
                 <li><p>location: Helsinki</p></li>
-        </ul>
-        <button onclick="topFunction()" id="to_top_btn"><i class="fa fa-angle-up fa-2x"></i></button>
+            </ul>
+            <button onclick="topFunction()" id="to_top_btn"><i class="fa fa-angle-up fa-2x"></i></button>
         </section>
     </footer>
+
     <script>
         var slideIndex = 0;
         carousel();
@@ -108,35 +109,38 @@
         function carousel() {
             var i;
             var slides = document.getElementsByClassName("my_slides");
+
             for (i=0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
+
             slideIndex++;
+
             if (slideIndex > slides.length) {
-                slideIndex = 1}
-                slides[slideIndex-1].style.display = "block";
-                setTimeout(carousel, 5000);
+                slideIndex = 1;
+            }
+
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 5000);
         }
-    </script>
-    <script>
+
         btn = document.getElementById("to_top_btn");
     
-    window.onscroll = function() {
-        scrollFunction()
-    };
-    
-    function scrollFunction () {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            btn.style.display = "block";
-        } else {
-            btn.style.display = "none";
+        window.onscroll = function() {
+            scrollFunction()
         }
-    }
     
-    function topFunction() {
-        document.documentElement.scrollTop = 0;
-    }
+        function scrollFunction () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        }   
+    
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
     </script>
-
 </body>
 </html>
