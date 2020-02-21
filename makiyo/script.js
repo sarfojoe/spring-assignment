@@ -13,6 +13,12 @@ burger.addEventListener('click', function () {
     toggleNav();
 });
 
+/* CV to download */
+
+function openCV() {
+    window.open('cv.html', '_blank');
+}
+
 /* Pop-up window on Skills card */
 
 function skillsPopUp() {
