@@ -5,10 +5,17 @@
   .header {
     display: flex;
     background-color: black;
-    padding: 0;
+    
   }
   .logo {
     color: cornsilk;
+  }
+
+  .dropdown-item{
+    float: left;
+    margin-left: 180px;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
   }
   .container {
     
