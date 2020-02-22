@@ -19,8 +19,13 @@
         slide = (slide === totalItems - 1) ? 0 : (slide + 1);
 
         document.getElementsByClassName('slider__photo')[slide].classList.add('active');
-    }
+        
 
+        
+    }
+    
+    
+ 
     function getPrev(){
         document.getElementsByClassName('slider__photo')[slide].classList.remove('active');
 
@@ -38,7 +43,17 @@
         
         // Set moving to false so that the slider becomes interactive
         moving = false;
+       
     }
+    $(function autoplay(){
+    setInterval(function () {
+      if ($('.slider:hover').length == 0) {
+        getNext();
+      }
+    }, 6000);
+   
+ 
+  });
 
     initSlider();
 })();
