@@ -284,7 +284,7 @@ footer {
 @media only screen and (min-width: 768px) and (max-device-width: 1024px) {
 
     header {
-        height: 6vh;
+        height: auto;
     }
 
     nav ul li {
@@ -310,7 +310,7 @@ footer {
 
     header {
         position: static;
-        height: 10vh;
+        height: auto;
     }
 
     h1, h2, h3, p, a, #map {
@@ -398,7 +398,7 @@ footer {
 @media (min-width: 321px) and (max-width: 767px) {
     header {
         position: static;
-        height: 10vh;
+        height: auto;
     }
 
     h1, h2, h3, p, a, #map {
