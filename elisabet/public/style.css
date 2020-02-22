@@ -350,8 +350,8 @@ footer {
 } 
 
 #contact p {
-   margin-top: 2rem;
-   margin-bottom: 2rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
 }
 
 #contact a {    
@@ -373,15 +373,25 @@ footer {
   margin: 1rem;
   text-align: center;
   padding: 10px;
-
-
+ 
 }
+
+.contact-txt h3 {
+  margin-top: 1rem;
+}
+
+.quote {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
 
 .fab {
   background: rgb(14, 118, 168);
   color: white;
   border-radius: 3px;
   padding: 2px 5px 2px 5px; 
+
 
 
 }
