@@ -280,12 +280,11 @@ footer {
     background-color: steelblue;
 }
 
-
 /* iPads */
 @media only screen and (min-width: 768px) and (max-device-width: 1024px) {
 
     header {
-        height: auto;
+        height: 6vh;
     }
 
     nav ul li {
@@ -303,6 +302,7 @@ footer {
     #bc {
         margin-right: 0;
         margin-bottom: 1vh;
+
     }
 }
 
@@ -310,7 +310,7 @@ footer {
 
     header {
         position: static;
-        height: auto;
+        height: 10vh;
     }
 
     h1, h2, h3, p, a, #map {
@@ -398,7 +398,7 @@ footer {
 @media (min-width: 321px) and (max-width: 767px) {
     header {
         position: static;
-        height: auto;
+        height: 10vh;
     }
 
     h1, h2, h3, p, a, #map {
