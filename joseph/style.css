@@ -61,14 +61,16 @@
   }
   #section-a {
     display: flex;
+    height: 500px;
   }
 
  
-  .image2{
-    margin-left: 50px;
-    margin-top: 50px;
+  picture{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
     height: 50px;
-    width: 50px;
+    width: 30px;
   }
 
   ul {
