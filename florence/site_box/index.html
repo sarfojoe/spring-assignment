@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+    <!------carousel snippet head tags above ---------->
+      <!------Fontawesome ---------->
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+      <script src="https://kit.fontawesome.com/76011f1753.js" crossorigin="anonymous"></script>
+    <!------Back to top button ---------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!------Bootstrap ---------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <!------ Google Fonts ---------->
+    <link href="https://fonts.googleapis.com/css?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+     <!------ End of Google Fonts---------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Florence_Anipa</title>
+</head>
+
+<body>
+    <!------Back to top button ---------->
+    <a id="button"></a>
+
+    <script>
+        var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, 'slow');
+});
+    </script>
+
+    <!------Back to top button ---------->
+    <header>   
+        <div class="head_1">
+         <!-- Logo -->
+         <p class="logo">.anipa</p>
+          <!-- Menu bar -->
+         <div class="sandwich_menu"><i class="fas fa-bars fa-2x"></i></div>
+        </div>
+         <!-- Menu drop down content -->
+         <nav class="menu_bar">
+            <ul>
+                <a href="#"><li>Home</li></a><!-- Embed home page to logo-->
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Portfolio</li></a>
+                <a href="#"><li>Blog</li></a>
+                <a href="#"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+       <!-- Sec 1 -->
+    <main>
+    <section id="hero_banner">    
+     <div class="typewrite">
+            <h1>Hello there!</p>
+            <h1>My name is Florence</h1>
+          </div>
+        <div class="typewriter">          
+            <h1>I'm a Web developer, Designer, Brand enthusiast</h1>
+          </div> 
+          <div class="overlay_container">
+        </div>
+    </section>
+    <!-- Sec 2 -->
+    <section id="profile">
+        <!--  <div class="profile_pix">
+            <img src="" alt="profile_pic"/>
+        </div>-->
+        <div class="profile_container">
+        <h3>Let me introduce myself</h3>
+        <hr>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Quam, in vero. Earum 
+            porro laudantium similique, provident 
+            reprehenderit fugiat velit cum molestias?
+             Unde nisi autem ex excepturi blanditiis 
+             delectus enim incidunt?Lorem ipsum dolor sit amet consectetur 
+             adipisicing elit. Quam, in vero. Earum 
+             porro laudantium similique, provident 
+             reprehenderit fugiat velit cum molestias?
+              Unde nisi autem ex excepturi blanditiis 
+              delectus enim incidunt?</p>
+              <br>
+              <br>
+              <div class="cv_box">
+                  Download CV
+              </div>     
+    </div>
+    </section>
+    
+    <!-- Sec 3 -->
+    <section id="carousel">    				
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+                    <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                      <!-- Carousel indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                        <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+                      </ol>
+                      <!-- Carousel items -->
+                      <div class="carousel-inner">
+                        <div class="active item">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                            </blockquote>
+                            <div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+                        </div>
+                        <div class="item">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                            </blockquote>
+                            <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+                        </div>
+                        <div class="item">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                            </blockquote>
+                            <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>							
+            </div>
+        </div>
+        <div class="carousel_overlay"></div>
+    </section>
+      
+
+       <!-- <p class="quote">
+            “<br>
+            In some ways, programming is like painting. <br>
+            You use a combination of science, art, and craft to determine what to do with them.<br>
+             - Andrew Hunt
+        </p>
+        -->
+    <!-- Sec 4 -->
+    <section id="end_banner">
+        <div class="portfolio_container">
+        <div class="portfolio_box">
+            Checkout Portfolio
+        </div> 
+    </div> 
+    <div class="footer_address">
+    
+    </div>
+   
+    </section>
+    </main>
+    <footer>
+
+    </footer>
+    <!-- Bootstrap jQuery,Javascript-->
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!------Back to top button jquery ---------->
+    
+</body>
+</html>
