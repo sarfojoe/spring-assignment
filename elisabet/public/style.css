@@ -29,9 +29,29 @@
     
   }
 
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
   .header:nth-child(1) {
       align-self: center;
+      margin-right: 10px;
   }
+  
+  .fas {
+    color: rgb(11, 97, 61);
+  }
+
+  .ml2 {
+  font-weight: 900;
+  font-size: 2em;
+}
+
+
 
   .dropbtn {
     background-color: rgb(80, 170, 81);
