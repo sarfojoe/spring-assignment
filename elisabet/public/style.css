@@ -13,6 +13,7 @@
       scroll-behavior: smooth;
   }
   
+  
   main {
     display: block;
   }
@@ -111,13 +112,14 @@
     border: grey 1px solid;
     border-radius: 5px;
     background: rgba(88, 7, 53, 0.815);
-    width: 70%;
+  
+    display: inline-block;
     text-align: center;
     margin-bottom: 20px;
     
   }
 
-  .fas {
+  .mypic .fas {
     color: rgb(255, 255, 255);
    
     padding-left: 1rem;
@@ -204,6 +206,7 @@
   text-decoration: underline;
 }
 
+
 .slider-wrapper {
     position: relative;
     overflow: hidden; 
@@ -234,7 +237,7 @@
     padding-left: 5rem;
     padding-right: 5em;
     z-index: 100; 
-    transition: transform .5s, opacity .2s, z-index .5s;
+    transition: transform .10s, opacity .1s, z-index .10s;
     display: flex;
     align-items: center;
     flex: 1;
@@ -334,7 +337,7 @@ footer {
 } 
 
 #contact img {
-  width: 45vh;
+  width: 60vh;
   margin: 1rem;
      
 }
@@ -343,6 +346,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
+  align-items: center;
   flex-wrap: wrap;
   line-height: 1.5rem;
   padding: 40px;
@@ -411,6 +415,7 @@ footer {
   z-index: 1000;
   right: 30px;
   width: 50px;
+  border: 0.5px solid rgb(54, 54, 54);
 
 }
 .scroll-top-btn::after {
