@@ -56,6 +56,9 @@ header{
 .fas {
     color: white;
 }
+.fas:hover {
+    color: orange;
+}
 /* Sec 1 */
 
 #hero_banner {
@@ -144,7 +147,7 @@ header{
 
 /*Carousel snippet*/
 #carousel {
-    background-image: url("https://source.unsplash.com/VLLurOvGjdU/1920x1020");
+    background-image: url("https://source.unsplash.com/VLLurOvGjdU/1920x1080");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -162,7 +165,7 @@ header{
 
 /*Carousel Fade Transition*/
 #fade-quote-carousel.carousel {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 #fade-quote-carousel.carousel .carousel-inner .item {
   opacity: 0;
