@@ -79,6 +79,10 @@ jQuery(document).ready(function() {
   });
 });
 
+ $(document).ready(function() {
+    $("#icon").hide( function(){$("#icon").slideDown(3000);}) ;
+
+  });
 
 var textWrapper = document.querySelector('.ml2');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -96,8 +100,4 @@ anime.timeline({loop: false})
 
 
   
-  $(document).ready(function() {
-    $("#icon").hide();
-    $("#icon").show(3000);
-    event.preventDefault();
-  });
+ 
