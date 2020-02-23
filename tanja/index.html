@@ -101,11 +101,11 @@
                         <p>tanja.lehtinen@edu.bc.fi</p>
                     </li>              
                     <li>
-                        <a href="https://www.linkedin.com/in/tanja-lehtinen-3b692019b/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                        <a href="//www.linkedin.com/in/tanja-lehtinen-3b692019b/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
                         <p>linkedin.com/in/tanja-lehtinen-3b692019b</p>
                     </li>
                     <li>
-                        <a href="https://github.com/maaliskesakuu" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                        <a href="//github.com/maaliskesakuu" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                         <p>maaliskesakuu</p>
                     </li>
                 </ul>    
@@ -139,15 +139,13 @@
 
         btn = document.getElementById("to_top_btn");
     
-        window.onscroll = function() {
-            scrollFunction()
-        };
+        window.onscroll = scrollFunction;
     
-        function scrollFunction () {
+        function scrollFunction() {
             if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-            btn.style.display = "block";
+                btn.style.display = "block";
             } else {
-            btn.style.display = "none";
+                btn.style.display = "none";
             }
         }
     
@@ -155,8 +153,8 @@
             document.documentElement.scrollTop = 0;
         }
 
-        $("#print_btn").on('click', function () {
-        window.print();
+        $("#print_btn").on("click", function () {
+            window.print();
         });
       
     </script>
