@@ -52,12 +52,14 @@ $(document).ready(function() {
 // slick slider
 $(document).ready(function() {
   $(".slider").slick({
+    dots: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: true,
-    variableWidth: true
+    variableWidth: true,
+    centerMode: true
   });
 });
 
@@ -67,6 +69,181 @@ AOS.init();
 // move fish
 jQuery(function($) {
   $("#yasemin").mouseover(function() {
+    //var dWidth = $(document).width() - 100, // 100 = image width
+    //dHeight = $(document).height() - 100, // 100 = image height
+    var nextX = Math.floor(
+        Math.random() *
+          ($(this)
+            .parent()
+            .width() -
+            $(this).width() -
+            1) +
+          1
+      ),
+      nextY = Math.floor(
+        Math.random() *
+          ($(this)
+            .parent()
+            .height() -
+            $(this).height() -
+            1) +
+          1
+      );
+    $(this).animate({ left: nextX + "px", top: nextY + "px" });
+  });
+});
+jQuery(function($) {
+  $("#yasemin1").mouseover(function() {
+    //var dWidth = $(document).width() - 100, // 100 = image width
+    //dHeight = $(document).height() - 100, // 100 = image height
+    var nextX = Math.floor(
+        Math.random() *
+          ($(this)
+            .parent()
+            .width() -
+            $(this).width() -
+            1) +
+          1
+      ),
+      nextY = Math.floor(
+        Math.random() *
+          ($(this)
+            .parent()
+            .height() -
+            $(this).height() -
+            1) +
+          1
+      );
+    $(this).animate({ left: nextX + "px", top: nextY + "px" });
+  });
+});
+jQuery(function($) {
+  $("#yasemin2").mouseover(function() {
+    //var dWidth = $(document).width() - 100, // 100 = image width
+    //dHeight = $(document).height() - 100, // 100 = image height
+    var nextX = Math.floor(
+        Math.random() *
+          ($(this)
+            .parent()
+            .width() -
+            $(this).width() -
+            1) +
+          1
+      ),
+      nextY = Math.floor(
+        Math.random() *
+          ($(this)
+            .parent()
+            .height() -
+            $(this).height() -
+            1) +
+          1
+      );
+    $(this).animate({ left: nextX + "px", top: nextY + "px" });
+  });
+});
+jQuery(function($) {
+  $("#yasemin3").mouseover(function() {
+    //var dWidth = $(document).width() - 100, // 100 = image width
+    //dHeight = $(document).height() - 100, // 100 = image height
+    var nextX = Math.floor(
+        Math.random() *
+          ($(this)
+            .parent()
+            .width() -
+            $(this).width() -
+            1) +
+          1
+      ),
+      nextY = Math.floor(
+        Math.random() *
+          ($(this)
+            .parent()
+            .height() -
+            $(this).height() -
+            1) +
+          1
+      );
+    $(this).animate({ left: nextX + "px", top: nextY + "px" });
+  });
+});
+jQuery(function($) {
+  $("#yasemin4").mouseover(function() {
+    //var dWidth = $(document).width() - 100, // 100 = image width
+    //dHeight = $(document).height() - 100, // 100 = image height
+    var nextX = Math.floor(
+        Math.random() *
+          ($(this)
+            .parent()
+            .width() -
+            $(this).width() -
+            1) +
+          1
+      ),
+      nextY = Math.floor(
+        Math.random() *
+          ($(this)
+            .parent()
+            .height() -
+            $(this).height() -
+            1) +
+          1
+      );
+    $(this).animate({ left: nextX + "px", top: nextY + "px" });
+  });
+});
+jQuery(function($) {
+  $("#yasemin5").mouseover(function() {
+    //var dWidth = $(document).width() - 100, // 100 = image width
+    //dHeight = $(document).height() - 100, // 100 = image height
+    var nextX = Math.floor(
+        Math.random() *
+          ($(this)
+            .parent()
+            .width() -
+            $(this).width() -
+            1) +
+          1
+      ),
+      nextY = Math.floor(
+        Math.random() *
+          ($(this)
+            .parent()
+            .height() -
+            $(this).height() -
+            1) +
+          1
+      );
+    $(this).animate({ left: nextX + "px", top: nextY + "px" });
+  });
+});
+jQuery(function($) {
+  $("#yasemin6").mouseover(function() {
+    //var dWidth = $(document).width() - 100, // 100 = image width
+    //dHeight = $(document).height() - 100, // 100 = image height
+    var nextX = Math.floor(
+        Math.random() *
+          ($(this)
+            .parent()
+            .width() -
+            $(this).width() -
+            1) +
+          1
+      ),
+      nextY = Math.floor(
+        Math.random() *
+          ($(this)
+            .parent()
+            .height() -
+            $(this).height() -
+            1) +
+          1
+      );
+    $(this).animate({ left: nextX + "px", top: nextY + "px" });
+  });
+});
+jQuery(function($) {
+  $("#yasemin7").mouseover(function() {
     //var dWidth = $(document).width() - 100, // 100 = image width
     //dHeight = $(document).height() - 100, // 100 = image height
     var nextX = Math.floor(
