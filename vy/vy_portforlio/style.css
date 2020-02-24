@@ -124,12 +124,7 @@ header nav {
   font-size: 1.2rem;
 }
 .banner {
-<<<<<<< Updated upstream:vy/vy_portforlio/style.css
-  background: url(/vy/vy_portforlio/photo/navpic.png) no-repeat fixed center
-    center/cover;
-=======
   background: url(/vy/) no-repeat fixed center center/cover;
->>>>>>> Stashed changes:vy/personal portfolio official/style.css
   height: 100vh;
   max-width: 100vw;
 }
