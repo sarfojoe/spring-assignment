@@ -11,11 +11,12 @@
     color: cornsilk;
   }
 
-  .dropdown-item{
-    float: left;
+  .nav{
     margin-left: 180px;
     margin-bottom: 10px;
-    background-color: antiquewhite;
+    display: flex;
+    margin-right: 50px;
+
   }
   .container {
     
@@ -62,13 +63,14 @@
   #section-a {
     display: flex;
     height: 500px;
+    background: rgb(50, 205, 153);
   }
 
  
-  picture{
-    margin-left: 2rem;
-    margin-top: 2rem;
-    margin-right: 2rem;
+  .section-a.image2{
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-right: 100px;
     height: 50px;
     width: 30px;
   }
@@ -79,6 +81,11 @@
   .text1 {
     margin-top: 50px;
     margin-left: 50px;
+  }
+  #section-b{
+    background-color: turquoise;
+    height: 300px;
+   
   }
   
   .text3 {
@@ -130,6 +137,16 @@
     margin-left: 20px;
     margin-top: 50px;
     margin-right: 100px;
+  }
+
+  #section-c{
+    height: 200px;
+    
+  }
+  .text6 {
+    margin-left: 20px;
+    margin-top: 20px;
+    
   }
   .contact {
     margin-left: 20px;
