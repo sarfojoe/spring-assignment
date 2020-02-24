@@ -7,8 +7,6 @@
   scroll-behavior: smooth;
 }
 html {
-  display: flex;
-  flex-wrap: wrap;
   font-size: 1.2em;
   width: 100vw;
   height: 100vh;

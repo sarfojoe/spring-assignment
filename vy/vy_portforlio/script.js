@@ -52,13 +52,12 @@ $(document).ready(function() {
 // slick slider
 $(document).ready(function() {
   $(".slider").slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    centerMode: true,
-    variableWidth: true,
-    arrow: true
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
+    variableWidth: true
   });
 });
 
