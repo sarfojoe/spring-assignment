@@ -110,6 +110,8 @@
 
    #home img {
       width: 25vw;
+      max-width: 300px;
+      min-width: 200px;
       display: flex;     
       border-radius: 5px;
       border: solid 1px black;
@@ -242,10 +244,9 @@
 }
 
 
-/* End of image slider */
-
 .slider img {
   height: 45vw;
+  max-height: 400px;
   margin-top: 5px;
   margin-bottom: 5px;
  
@@ -358,6 +359,7 @@ footer {
 
 #contact img {
   width: 35vw;
+  max-width: 400px;
   margin: 1rem;
      
 }
