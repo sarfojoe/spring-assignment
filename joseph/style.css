@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 body {
   font-family: Arial, sans-serif;
@@ -44,7 +43,7 @@ body {
   list-style: none;
 }
 
-#navbar h2 a{
+#navbar h2 a {
   color: #fff;
   text-decoration: none;
 }
@@ -66,7 +65,7 @@ body {
 /* Showcase Area*/
 #showcase {
   background: url(laptop1.webp) no-repeat center center/cover;
-  height: 85.7vh;
+  height: 90.7vh;
 }
 
 .showcase-content {
@@ -87,19 +86,16 @@ body {
 .showcase-content h1 {
   font-size: 4rem;
   margin-bottom: 2rem;
-
 }
 
 .showcase-content .btn {
   font-size: 1.5rem;
   padding: 1rem 10rem;
   transition: color 0.3s, background 0.3s;
-
 }
 .showcase-content .btn:hover {
   background: #3693ff;
   color: #fff;
-
 }
 
 .btn {
@@ -117,7 +113,8 @@ body {
   padding: 5rem 0;
 }
 
-#about h2, #services h2{
+#about h2,
+#services h2 {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 3rem;
@@ -141,7 +138,7 @@ body {
   flex: 1;
 }
 
-#about .about-text{
+#about .about-text {
   text-align: justify;
 }
 #about .about-image img {
@@ -182,6 +179,3 @@ body {
   margin: 0 1rem;
   margin-bottom: 2rem;
 }
-
-
-
