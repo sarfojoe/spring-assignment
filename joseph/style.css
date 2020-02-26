@@ -24,6 +24,11 @@ body {
   color: #333;
 }
 
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
 /* Navbar */
 #navbar {
   display: flex;
@@ -149,7 +154,7 @@ body {
   margin-top: 60px;
 }
 
-/* Section: Services*/
+/* Section: Experiences */
 #services {
   padding: 3rem 0;
 }
@@ -179,3 +184,140 @@ body {
   margin: 0 1rem;
   margin-bottom: 2rem;
 }
+
+/* section: Education */
+
+#testimonials {
+  background: url(bkgrnd.webp) no-repeat center center/cover;
+  height: auto;
+}
+
+.testimonials-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5rem 0;
+}
+
+#testimonials h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+#testimonials .boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+#testimonials .box {
+  background: rgba(54, 147, 255, 0.7);
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  border-radius: 15px;
+}
+
+#testimonials .box:first-child, #testimonials .box:nth-child(2),
+#testimonials .box:nth-child(3), #testimonials .box:nth-child(4) {
+  margin-bottom: 3rem;
+}
+
+#testimonials .box img {
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+ #testimonials p {
+   color: #fff;
+ }
+
+/* section: Contact */
+#contact {
+  padding: 5rem 0;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 8rem;
+}
+
+#contact h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 3rem 0;
+  margin-top: 5rem;
+}
+
+#contact .form-box {
+  background: #fff;
+  padding: 3rem;
+  box-shadow: 2px 2px 5px #d1d1d1;
+  border-radius: 10px;
+}
+#contact .form-group {
+  margin-bottom: 2rem;
+}
+#contact .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.1rem;
+}
+#contact .form-group input,
+#contact .form-group textarea {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.3rem;
+  padding: 1rem;
+  border: 0.5px solid #333;
+  border-radius: 5px;
+}
+#contact .form-group textarea {
+  font-family: Arial, sans-serif;
+}
+
+#contact .contact-btn {
+  width: 80%;
+  margin-left: 10%;
+  display: inline-block;
+  padding: 1rem, 3rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  background: #3693ff;
+  color: #fff;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: backgrond 0.3s;
+}
+
+#contact .contact-btn:hover {
+  background: #0378ff;
+}
+
+#contact .form-container {
+  position: relative;
+}
+
+#contact .mail-icon {
+  font-size: 4rem;
+  background: #3693ff;
+  color: #fff;
+  display: inline-block;
+  padding: 1.5rem, 2rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -7%;
+  left: 45%;
+}
+
+/* Footer */
+footer {
+  padding: 2.5rem;
+}
+ footer p {
+   text-align: center;
+ }
