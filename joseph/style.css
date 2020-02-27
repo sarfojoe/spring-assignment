@@ -154,6 +154,10 @@ body {
   margin-top: 60px;
 }
 
+.text3 {
+  margin: 30px;
+}
+
 .fonts {
   border: 1px solid rgba(255, 255, 255, 0.021);
   border-collapse: separate;
