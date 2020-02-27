@@ -154,6 +154,38 @@ body {
   margin-top: 60px;
 }
 
+.fonts {
+  border: 1px solid rgba(255, 255, 255, 0.021);
+  border-collapse: separate;
+  display: flex;
+  padding: 10px;
+  margin: 15px;
+}
+.fonts1 {
+  margin-right: 10px;
+  background: rgba(255, 255, 254, 254);
+  text-align: center;
+  padding: 30px;
+}
+.fonts2 {
+  margin-right: 10px;
+  background: rgba(255, 255, 254, 254);
+  text-align: center;
+  padding: 30px;
+}
+.fonts3 {
+  margin-right: 10px;
+  background: rgba(255, 255, 254, 254);
+  text-align: center;
+  padding: 30px;
+}
+.fonts4 {
+  margin-right: 10px;
+  background: rgba(255, 255, 254, 254);
+  text-align: center;
+  padding: 30px;
+}
+
 /* Section: Experiences */
 #services {
   padding: 3rem 0;
