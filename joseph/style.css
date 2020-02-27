@@ -189,6 +189,7 @@ body {
 /* Section: Experiences */
 #services {
   padding: 3rem 0;
+  background: lightblue;
 }
 #services h3 {
   text-align: center;
