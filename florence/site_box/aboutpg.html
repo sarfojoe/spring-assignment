@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
+    
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -14,6 +14,7 @@
         <!------Bootstrap ---------->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
          <!------ Google Fonts ---------->
+         <link href="https://fonts.googleapis.com/css?family=Roboto:350,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Allura&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
@@ -22,50 +23,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Florence_Anipa</title>
-    </head>
+    
 </head>
 <header class="page2_header">
     <nav class="header_container">
         <div class="logo"><a href="index.html">.anipa</a></div> 
+
         <div class="menu_wrapper">
-          
+           
         <ul>
-            <a href="#"><li>Education</li></a>
-            <a href="#"><li>Skills</li></a>
-            <a href="#"><li>Experience</li></a>
-            <a href="#"><li>Services</li></a>  
-            <a href="#"><li>Portfolio</li></a>  
-            <a href="#"><li>Contact</li></a>  
+            <a href="#education"><li>Education</li></a>
+            <a href="#skills"><li>Skills</li></a>
+            <a href="#experience"><li>Experience</li></a>
+            <a href="#service"><li>Services</li></a>  
+            <a href="#portfolio"><li>Portfolio</li></a>  
+            <a href="#contact"><li>Contact</li></a>  
         </ul>
     </div>
       <!-- Hamburger menu  -->
-      <div class="hamburger_menu"><i class="fas fa-bars fa-3x"></i></div> 
-      <input type="checkbox" class="toggler">
+      <a href="index.html" class="closebtn"><i class="fas fa-times"></i></a>
     </nav>  
     </header>
 <body>
+   
      <!------Back to top button ---------->
      <a id="button"></a>
-     <script>
-        var btn = $('#button');
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, 'slow');
-});
-    </script>
-    
       <main>      
+
     <!-- Sec 1 -->
-    <section id="education"></section>
+    <section id="education">
     <div id="main_edu">
     <div class="edu_container">
         <p class="c">Education</p>
@@ -105,32 +91,45 @@ btn.on('click', function(e) {
         Quasi quidem ipsa vel ipsum, necessitatibus, iste, debitis 
         temporibus expedita maxime hic voluptatem at eos rem itaque 
         inventore quod? Facere, consectetur porro.
+        <br>
+        <br>
+        <strong>Lorem ipsum dolor sit amet</strong>
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Quasi quidem ipsa vel ipsum, necessitatibus, iste, debitis 
+        temporibus expedita maxime hic voluptatem at eos rem itaque 
+        inventore quod? Facere, consectetur porro. Lorem ipsum dolor sit amet, <br>
+        consectetur adipisicing elit. 
+        Quasi quidem ipsa vel ipsum, necessitatibus, iste, debitis 
+        temporibus expedita maxime hic voluptatem at eos rem itaque 
+        inventore quod? Facere, consectetur porro.
     </p>    
 </div>
 </div>
     <hr>
+</section>
     <!---------------------------------->
      <!-- Sec 2 -->
-     <section id="education"></section>
+     <section id="skills">
      <div id="main_edu">
      <div class="skills_container">
          <p class="c">Skills</p>
      </div>
      <div class="edu_content"></div>
+
      <div class="cd">
-         <!-- Technical skills-->
-        <strong>Lorem ipsum dolor sit amet</strong>
+        <strong class="tskills"> Technical skills</strong>
         <br>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
+            <h5 class="tskills">Lorem</h5>
+            <h5 class="tskills">Lorem</h5>
+            <h5 class="tskills">Lorem</h5>
+            <h5 class="tskills">Lorem</h5>
+            <h5 class="tskills">Lorem</h5>
+            <h5 class="tskills">Lorem</h5>
      </div> 
      <!-- Progress bars-->
      <div class="progress_main">
-        ILLUSTRATOR
+        ADOBE ILLUSTRATOR
        <!-- Blue circle -->
        <div class="progress_bars">
             <div class="container">
@@ -184,7 +183,7 @@ btn.on('click', function(e) {
                      </div>
                  </div>
                  <!-- Green circle -->
-                 <p class="pro_heading"></p>PHOTOSHOP</p>
+                 <p class="pro_heading"></p> ADOBE PHOTOSHOP</p>
                  <div class="col-md-6 col-sm-6">
                      <div class="progress green">
                          <span class="progress-left">
@@ -199,16 +198,17 @@ btn.on('click', function(e) {
                  </div>
             </div>
         <hr>
-
+    </section>
       <!---------------------------------->
       <!-- Sec 3 -->
-      <section id="education"></section>
+      <section id="experience">
       <div id="main_edu">
       <div class="edu_container">
           <p class="c">Experience</p>
       </div>
       <div class="edu_content"></div>
-      <p class="cc"><strong>Lorem ipsum dolor sit amet</strong>
+      <p class="cc">
+        <strong>Lorem ipsum dolor sit amet</strong>
         <br>
         consectetur adipisicing elit. 
         Quasi quidem ipsa vel ipsum, necessitatibus, iste, debitis 
@@ -242,16 +242,29 @@ btn.on('click', function(e) {
         Quasi quidem ipsa vel ipsum, necessitatibus, iste, debitis 
         temporibus expedita maxime hic voluptatem at eos rem itaque 
         inventore quod? Facere, consectetur porro.
+        <br>
+        <br>
+        <strong>Lorem ipsum dolor sit amet</strong>
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Quasi quidem ipsa vel ipsum, necessitatibus, iste, debitis 
+        temporibus expedita maxime hic voluptatem at eos rem itaque 
+        inventore quod? Facere, consectetur porro. Lorem ipsum dolor sit amet, <br>
+        consectetur adipisicing elit. 
+        Quasi quidem ipsa vel ipsum, necessitatibus, iste, debitis 
+        temporibus expedita maxime hic voluptatem at eos rem itaque 
+        inventore quod? Facere, consectetur porro.
     </p>      
   </div>
   </div>
       <hr>
+    </section>
        <!---------------------------------->
      <!-- Sec 4 -->
      <section id="service">
         <div id="main_service">
             <div class="serv_container">
-                <p class="c">Services</p>
+                <p class="sc">Services</p>
             </div>
             <!-- First row-->
         <!-- Web development box -->
@@ -308,57 +321,7 @@ btn.on('click', function(e) {
             temporibus expedita maxime hic voluptatem at eos rem itaque 
             inventore quod? Facere, consectetur porro.Lorem ipsum dolor sit amet, <br>
             consectetur adipisicing elit. </p>
-        </div>
-        
- <!-- Second row-->
- <!--
- <div id="main_service2">
-    <div class="edu_content"></div>
-    <span><i class="fas fa-laptop-code fa-3x"></i></span> --><!-- web development icon -->
-<!--
-    <div id="service_box2">
-       <p><strong>Lorem ipsum dolor sit amet</strong>
-           <br>
-           consectetur adipisicing elit. 
-           Quasi quidem ipsa vel ipsum, necessitatibus, iste, debitis 
-           temporibus expedita maxime hic voluptatem at eos rem itaque 
-           inventore quod? Facere, consectetur porro.Lorem ipsum dolor sit amet, <br>
-           consectetur adipisicing elit. </p>
-   </div>
--->
-    <!-- Mobile app box -->
-    <!--
-   <div class="edu_content"></div>
-   <span><i class="fas fa-mobile-alt fa-3x"></i></span>--> <!-- mobile app icon -->
- <!--
-   <div id="service_box2">
-      <p><strong>Lorem ipsum dolor sit amet</strong>
-          <br>
-          consectetur adipisicing elit. 
-          Quasi quidem ipsa vel ipsum, necessitatibus, iste, debitis 
-          temporibus expedita maxime hic voluptatem at eos rem itaque 
-          inventore quod? Facere, consectetur porro.Lorem ipsum dolor sit amet, <br>
-          consectetur adipisicing elit. </p>
-  </div>
--->
-<!-- UX/UI box -->
-<!--
-  <div class="edu_content"></div>
-  <span><i class="fas fa-pencil-ruler fa-3x"></i></span> --> <!-- ux/ui icon -->
-<!--
-  <div id="service_box2">
-     <p><strong>Lorem ipsum dolor sit amet</strong>
-         <br>
-         consectetur adipisicing elit. 
-         Quasi quidem ipsa vel ipsum, necessitatibus, iste, debitis 
-         temporibus expedita maxime hic voluptatem at eos rem itaque 
-         inventore quod? Facere, consectetur porro.Lorem ipsum dolor sit amet, <br>
-         consectetur adipisicing elit. </p>
- </div>
-    </div>
- </div>
-   -->
-      
+        </div>   
       </div>
 </section>
 <hr>
@@ -368,24 +331,25 @@ btn.on('click', function(e) {
      <div class="port_container">
          <p class="c">Portfolio</p>   
      </div>
-     <!-- Portfolio menu-->
-    
-    
 <!-- Portfolio content-->
-     <div class="port_content">
-     <div class="port_1">All Creatives</div>
-     <div class="port_1">Web design</div>
-     <div class="port_1">Mobile Apps</div>
-     <div class="port_1">UX/UI</div>
-     <div class="port_1">Graphic design</div>
-     <div class="port_1">Digital Marketing</div>
+    <div class="port_content">
+     <!-- <div><h3><strong>All Creatives</strong></h3> </div> --> 
+     <div class="port_1"><img src="img/Creatives.jpg" alt="crimg" class="create"></div>
+    <!--  <div><h3><strong>Web design</strong></h3> </div>--> 
+     <div class="port_2"><img src="img/website.jpg" alt="webimg" class="web"></div>
+    <!--  <div><h3><strong>Web design</strong></h3> </div>--> 
+    <div class="port_3"><img src="img/mobile.jpg" alt="mobimg" class="mob"></div>
+    <!--  <div><h3><strong>Web design</strong></h3> </div>--> 
+    <div class="port_4"><img src="img/UX.jpg" alt="uximg" class="ux"></div>
+    <!--  <div><h3><strong>Web design</strong></h3> </div>--> 
     </div>
  </div>
 </div>
  
      <hr>
+    </section>
       <!-- Sec 6 -->
-      <section id="contact"></section>
+      <section id="contact">
     <div id="main_edu">
     <div class="cont_container">
         <p class="c">Contact</p>
@@ -418,24 +382,50 @@ btn.on('click', function(e) {
 </div>
 </div>
 </div>
-
+</section>
     </main>
-     <!-- Sec 7 -->
-     <footer>
-    <section id="end_banner">
-
-        <div class="footer_container">
-            <!-- Download CV box -->
-        <div class="download_box">
-            Download CV
+      <!-- Sec 4 -->
+      <section id="end_banner">
+        <div class="portfolio_container">
+        <div class="portfolio_box">
+            Download CV 
         </div> 
+    </div> 
+    <footer>
+          <!-- Social media handles-->
+        <div class="sm_handles">
+            Stay in touch <span><i class="fab fa-facebook-square fa-2x"></i><i class="fab fa-twitter-square fa-2x"></i> <i class="fab fa-instagram-square fa-2x"></i><i class="fab fa-linkedin-square fa-2x"></i><i class="fab fa-google-plus-square fa-2x"></i></span>    
+            </div>
+             <!-- Footer endnotes-->
+            <div class="address_wrapper">
+            <div class="address">
+                Address:<br>
+                Lorem ipsum, dolor sit amet 
+                consectetur adipisicing elit. 
+            </div>
+            <div class="address">
+                Contact:<br>
+                Lorem ipsum, dolor sit amet 
+                consectetur adipisicing elit. 
+            </div>
+            <div class="address">
+                Blog:<br>
+               www.florenceanipa.com 
+            </div>
         </div>
-</footer>
+            <hr class="footer_line">
+            <div class="footer_address">
+                ©2020 anipa. All Rights Reserved.<span class="terms_conditions"> Terms & Privacy.</span>
+            </div>
+        </footer>
+   
+    </section>
     
     <!-- Bootstrap jQuery,Javascript-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!------Back to top button jquery ---------->
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>

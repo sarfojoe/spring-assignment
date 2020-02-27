@@ -25,7 +25,9 @@
 <header class="page1_header page2_header">
     <nav class="header_container">
         <div class="logo1 logo"><a href="index.html">.anipa</a></div> 
-        <div class="menu_wrapper">
+
+        <div id="mySidenav" class="menu_wrapper1">
+           
             <ul>
                 <a href="#"><li></li></a>
                 <a href="#"><li></li></a>
@@ -36,31 +38,13 @@
             </ul>
         </div>
       <!-- Hamburger menu  -->
-      <div class="hamburger_menu .hamburger_menu1"><i class="fas fa-bars fa-3x"></i></div> 
+      <div class="hamburger_menu .hamburger_menu1"><a href="aboutpg.html"><i class="fas fa-bars fa-3x"></i></a></div> 
     </nav>
     
     </header>
 <body>
     <!------Back to top button ---------->
-    <a id="button"></a>
-
-    <script>
-        var btn = $('#button');
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, 'slow');
-});
-    </script>
-
+    <a id="button"></a> 
     <!------Back to top button ---------->
        <!-- Sec 1 -->
     <main>
@@ -137,19 +121,27 @@ btn.on('click', function(e) {
                       <div class="carousel-inner">
                         <div class="active item">
                             <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-                            </blockquote>        
+                                <p>Brand is just a perception,
+                                     and perception will match reality over time.
+                                      Sometimes it will be ahead, other times it will be behind.
+                                       </p>
+                                <small> Elon Musk</small> 
+                            </blockquote>   
+                                <br>
+                                <br>
                         </div>
                         
                         <div class="item">
                             <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                                <p>The doers are the major thinkers. The people that really create the things that change this industry are both the thinker and doer in one person. </p>
+                                <small> Steve Jobs</small> 
                             </blockquote>
                          
                         </div>
                         <div class="item">
                             <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                                <p>If all my bridge coach ever told me was that I was ‘satisfactory,’ I would have no hope of ever getting better. </p>
+                                <small> Bill Gates</small> 
                             </blockquote>
                            
                         </div>
@@ -169,6 +161,7 @@ btn.on('click', function(e) {
              - Andrew Hunt
         </p>
         -->
+    </main>
     <!-- Sec 4 -->
     <section id="end_banner">
         <div class="portfolio_container">
@@ -176,6 +169,7 @@ btn.on('click', function(e) {
             Checkout Portfolio
         </div> 
     </div> 
+
     <footer>
           <!-- Social media handles-->
         <div class="sm_handles">
@@ -205,13 +199,13 @@ btn.on('click', function(e) {
         </footer>
    
     </section>
-    </main>
+  
     
     <!-- Bootstrap jQuery,Javascript-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!------Back to top button jquery ---------->
-    
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
