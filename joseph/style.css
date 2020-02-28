@@ -9,11 +9,21 @@ body {
   color: #333;
   overflow-x: hidden;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    text-align: justify;
+  }
+}
 
 /* Utility classes */
 .container {
   max-width: 1100px;
   margin: auto;
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    text-align: center;
+  }
 }
 .text-primary {
   color: #3693ff;
@@ -41,6 +51,11 @@ body {
   z-index: 1;
   border-bottom: 3px solid #3693ff;
 }
+@media only screen and (max-width: 600px) {
+  #navbar {
+    text-align: justify;
+  }
+}
 
 #navbar ul {
   display: flex;
@@ -52,6 +67,12 @@ body {
   color: #fff;
   text-decoration: none;
 }
+@media only screen and (max-width: 600px) {
+  #navbar h2 a {
+    text-align: justify;
+    position: relative;
+  }
+}
 
 #navbar li a {
   text-decoration: none;
@@ -61,6 +82,11 @@ body {
   margin: 0 0.5rem;
   border-radius: 5px;
   transition: background-color 0.3s;
+}
+@media only screen and (max-width: 600px) {
+  #navbar li a {
+    position: relative;
+  }
 }
 
 #navbar li a:hover {
@@ -156,7 +182,6 @@ body {
 
 .text3 {
   margin: 30px;
-  
 }
 
 .fonts {
@@ -257,8 +282,10 @@ body {
   border-radius: 15px;
 }
 
-#testimonials .box:first-child, #testimonials .box:nth-child(2),
-#testimonials .box:nth-child(3), #testimonials .box:nth-child(4) {
+#testimonials .box:first-child,
+#testimonials .box:nth-child(2),
+#testimonials .box:nth-child(3),
+#testimonials .box:nth-child(4) {
   margin-bottom: 3rem;
 }
 
@@ -266,9 +293,9 @@ body {
   border-radius: 50%;
   margin-right: 2rem;
 }
- #testimonials p {
-   color: #fff;
- }
+#testimonials p {
+  color: #fff;
+}
 
 /* section: Contact */
 #contact {
@@ -355,14 +382,14 @@ body {
 /* scroll button */
 .fixed-button {
   display: inline-block;
-  background-color: rgb(0, 174, 255);  
+  background-color: rgb(0, 174, 255);
   height: 50px;
   text-align: center;
   border-radius: 4px;
   margin: 30px;
   position: fixed;
-  bottom: 30px;   
-  transition: background-color .3s;
+  bottom: 30px;
+  transition: background-color 0.3s;
   z-index: 1000;
 }
 
@@ -372,23 +399,19 @@ body {
 }
 
 .scroll-top-btn::after {
-content: "\f077";
-font-family: FontAwesome;
-font-weight: normal;
-font-style: normal;
-font-size: 2em;
-line-height: 50px;
-color: #fff;
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
 }
-
-
-
-
 
 /* Footer */
 footer {
   padding: 2.5rem;
 }
- footer p {
-   text-align: center;
- }
+footer p {
+  text-align: center;
+}
