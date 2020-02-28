@@ -1,9 +1,3 @@
-/*:root {
-    --primary-color: rgba(13, 110, 139, 0.75);
-    --overlay-color: rgba(24, 39, 51 , 0.85);
-    --menu-speed: 0.75s;
-  }*/
-
 
 /* Styling whole page*/
 * {
@@ -60,7 +54,7 @@ li:hover {
     height: 55px;
     position: fixed;
     z-index: 2;
-    box-shadow: 0 0 50px 30px #03274e;
+    box-shadow: 0 0 50px 20px #03274e;
 }
 .page2_header{
     height: 60px;
@@ -82,7 +76,7 @@ li:hover {
     color: white;
 }
 /*Logo for page 1*/
-.logo1, .hamburger_menu {
+.logo1,.logo, .hamburger_menu {
     margin-top:-1rem ; 
     padding-bottom: 2rem;
 }
@@ -132,7 +126,7 @@ li:hover {
       blink-caret .5s step-end infinite;
   }
   .typewriter, .typewrite {
-    width: 100vw;
+    width: 80vw;
     display: flex;
     justify-content: center;
     z-index: 1;  
@@ -141,7 +135,7 @@ li:hover {
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 70% }
   }
   
   /* The typewriter cursor effect */
@@ -155,7 +149,7 @@ li:hover {
     background-color: rgb(216, 216, 216,0.5);
     border-radius: 2px;
     height: 70vh;  
-    padding: 0;  
+    padding-left: 10rem;  
     display: flex;  
 }
 
@@ -182,6 +176,13 @@ li:hover {
     padding: 15px;
     border-radius: 5px;
     color: white;
+}
+.cv_box2{
+    color: white;
+}
+.cv_box2:hover{
+    color: orange;
+    text-decoration: none;
 }
 .cv_box:hover {
     text-decoration: underline;
@@ -277,7 +278,7 @@ li:hover {
     background-color:#040f1b;
     height: 500px;
    }
-  .portfolio_box{
+  .portfolio_box {
       width: 200px;
       background-color: #040f1b;
       border: solid 1px rgb(249, 249, 253);
@@ -288,6 +289,10 @@ li:hover {
       font-size: 1.5em;
       font-weight: bolder;
       color: white;
+  }
+
+  .portfolio_box:hover {
+      color: orange;
   }
   .portfolio_container{
     display: flex;
@@ -319,11 +324,13 @@ li:hover {
   /*Footer endnotes*/
   .address{
       color: rgb(152, 152, 153);
-      padding: 1rem;
+      padding: 0.5rem;
       padding-left:5rem;
+      font-size: 11px;
   }
   .address_wrapper{
       display: flex;
+      padding-bottom: 4rem;
   }
   .footer_line{
       background-color: rgb(152, 152, 153) ;
@@ -609,7 +616,7 @@ li:hover {
     margin: 0; 
 }
 .fa-laptop-code, .fa-mobile-alt,.fa-pencil-ruler {
-   color: grey;
+   color: rgba(3,9,17,0.9);
    padding: 3rem;
    padding-top: 5rem;
    padding-bottom:0;
@@ -642,7 +649,7 @@ li:hover {
 .port_container {
     width: 20vw;
     height: 65vh;
-    padding-top: 15rem;
+    padding-top: 5rem;
     background-color: rgb(253, 250, 244); 
     border-radius: 4px; 
 }
