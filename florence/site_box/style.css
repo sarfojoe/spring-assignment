@@ -367,7 +367,7 @@ li:hover {
 }
   .edu_container , .expe_container {
       width: 20vw;
-      height: 40vh;
+      height: 50vh;
       background-color: rgb(253, 250, 244);  
       border-radius: 4px; 
   }
@@ -380,7 +380,7 @@ li:hover {
 }
 .serv_container {
     width: 20vw;
-    height: 25vh;
+    height: 30vh;
     background-color: rgb(255, 248, 233); 
     border-radius: 4px; 
 }
@@ -408,6 +408,8 @@ li:hover {
     padding-left: 10rem;
      text-align: justify;
      color: rgba(3,9,17,0.9);
+     font-size: 12px;
+     width: 1200px;
  }
 
  .cd,.tskills{
