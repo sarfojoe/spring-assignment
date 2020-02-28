@@ -23,6 +23,7 @@ body {
 @media only screen and (max-width: 800px) {
   .container {
     text-align: center;
+    position: relative;
   }
 }
 .text-primary {
@@ -51,9 +52,11 @@ body {
   z-index: 1;
   border-bottom: 3px solid #3693ff;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   #navbar {
+    display: block;
     text-align: justify;
+    position: relative;
   }
 }
 
@@ -228,6 +231,11 @@ body {
 }
 #services .boxes {
   display: flex;
+}
+@media only screen and (max-width: 600px) {
+  #services .boxes {
+    position: relative;
+  }
 }
 
 #services .box {
