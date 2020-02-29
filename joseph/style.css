@@ -52,7 +52,7 @@ body {
   z-index: 1;
   border-bottom: 3px solid #3693ff;
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 600px) {
   #navbar {
     display: block;
     text-align: justify;
@@ -71,9 +71,10 @@ body {
   text-decoration: none;
 }
 @media only screen and (max-width: 600px) {
-  #navbar h2 a {
+  #navbar h2 a, #navbar ul {
     text-align: justify;
     position: relative;
+    display: block;
   }
 }
 
@@ -89,6 +90,7 @@ body {
 @media only screen and (max-width: 600px) {
   #navbar li a {
     position: relative;
+    display: inline-block;
   }
 }
 
@@ -115,6 +117,12 @@ body {
   right: 0;
   background: rgba(0, 00, 0, 0.6);
   color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  .showcase-content {
+    text-align: justify;
+    position: relative;
+  }
 }
 
 .showcase-content h1 {
@@ -194,6 +202,13 @@ body {
   padding: 10px;
   margin: 15px;
 }
+@media only screen and (max-width: 600px) {
+  .fonts {
+    text-align: justify;
+    position: relative;
+    display: inline-block;
+  }
+}
 .fonts1 {
   margin-right: 10px;
   background: rgba(255, 255, 254, 254);
@@ -235,6 +250,8 @@ body {
 @media only screen and (max-width: 600px) {
   #services .boxes {
     position: relative;
+    display: block;
+    margin-bottom: 5px;
   }
 }
 
@@ -245,7 +262,7 @@ body {
   margin: 0 3rem;
   border-radius: 10px;
   box-shadow: 2px 2px 5px #d1d1d1;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 #services .box i {
   color: #fff;
