@@ -1,0 +1,548 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  overflow-y: hidden; /* hiding scrolling up and down on the whole page, if visible */
+}
+
+.hide-scroll {
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  font-family: "Montserrat";
+  color: #212922;
+  line-height: 2rem;
+}
+
+img {
+  object-fit: cover;
+  max-height: 350px;
+  border-radius: 3px;
+}
+
+h1,
+h2 {
+  color: #00e193;
+}
+
+h1 {
+  line-height: 5rem;
+}
+
+/* UTILITIES */
+
+.hide {
+  display: none;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.p {
+  padding: 2rem 1rem;
+}
+
+.btn {
+  color: #e8fff6;
+  background-color: #1e997c;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  min-width: 150px;
+  border: 2px solid #1b866d;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: #1b866d;
+}
+
+.btn:active {
+  background: #187761;
+  border: 2px solid #187761;
+}
+
+/* BACK TO TOP BUTTON */
+
+.to-top-btn {
+  position: fixed;
+  left: 1rem;
+  bottom: 3vh;
+  z-index: 1000;
+}
+
+.to-top-btn i {
+  margin-right: 0.5rem;
+}
+
+/* HEADER */
+
+header {
+  height: 60px;
+  min-height: 50px;
+  width: 100vw;
+  background: #212922;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 14px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #60b0f4;
+}
+
+nav ul li a:hover {
+  color: #212922;
+  background: #60b0f4;
+}
+
+.logo:hover {
+  background: transparent;
+}
+
+.logo {
+  max-height: 90px;
+}
+
+/* SPINNER OF FAKE LOADING & ANALYTICS DISCLAIMER*/
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+}
+
+#disclaimer {
+  color: #6bac97;
+  width: 100%;
+  margin-left: -35%;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.line {
+  animation: expand 1s ease-in-out infinite;
+  border-radius: 10px;
+  display: inline-block;
+  transform-origin: center center;
+  margin: 0 15px;
+  width: 3px;
+  height: 70px;
+}
+
+.line:nth-child(1) {
+  background: #6bac97;
+}
+
+.line:nth-child(2) {
+  animation-delay: 180ms;
+  background: #437758;
+}
+
+.line:nth-child(3) {
+  animation-delay: 360ms;
+  background: #315a42;
+}
+
+.line:nth-child(4) {
+  animation-delay: 540ms;
+  background: #244130;
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(2);
+  }
+}
+
+/* MAIN */
+
+.scrolling-wrapper {
+  box-sizing: content-box;
+  overflow: auto;
+  white-space: nowrap;
+  background: black;
+  display: flex;
+  margin-top: 60px; /* to avoid this element from hiding behind the fixed header and footer */
+  height: 93vh;
+  margin-bottom: -100px; /* to push the scroll bar off the screen, 100px to be sure */
+  padding-bottom: 100px; /* to push the content back to its place */
+  scroll-behavior: smooth;
+}
+
+.container {
+  height: 100%;
+  min-width: 100vw; /* to have the sections full screen; doesnt seem to work with just width - flex fault? */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* LANDING PAGE WITH SLIDER */
+
+#home {
+  background: #294936;
+  color: #cbf4d9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  min-width: 100vw; /* to have the sections full screen; doesnt seem to work with just width - flex fault? */
+  position: relative;
+}
+
+.slider-description {
+  width: 300px;
+  white-space: normal;
+  text-align: center;
+}
+
+.bea {
+  font-family: "Bilbo Swash Caps";
+  font-size: 3rem;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-track .slick-slide {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SLIDER */
+
+.slick-slider {
+  width: 50vw;
+  height: 70vh;
+  box-sizing: border-box;
+}
+
+.slider img {
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 3px;
+}
+
+.vertical-flip {
+  /* temporary solution to vertical pictures (except for the profile picture/portrait) being flipped when used in html */
+  transform: rotate(90deg);
+}
+
+/* SCROLLING DIRECTION ARROW */
+
+.fa-arrow-right {
+  position: absolute;
+  bottom: 8vh;
+  right: 3vw;
+  font-size: 2rem;
+  color: #212922;
+}
+
+/* SKILLS */
+
+#skills {
+  background: #437758;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70vh;
+  width: 90vw;
+}
+
+.skills-content h3 {
+  color: #60b0f4;
+  display: block;
+  height: 3rem;
+  width: 150px;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.ict,
+.lang {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cards-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  padding: 1rem;
+  background: #cbf4d9;
+  border-radius: 5px;
+}
+
+/* flags */
+.skill-card img {
+  max-height: 30px;
+  max-width: 60px;
+}
+
+/* IT icons */
+.skill-card i {
+  font-size: 2.5rem;
+}
+
+.fa-html5 {
+  color: #e34f26;
+}
+
+.fa-css3-alt {
+  color: #2085c4;
+}
+
+.fa-js {
+  color: #dac41e;
+}
+
+.logo-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+  width: 70%;
+}
+
+/* progress bars */
+.progress-bar-background {
+  background: #437758; /* colors and percentage of progress kinda in negative - if I want animation, i have to fix it better */
+  height: 90%;
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.progress-bar {
+  background: #6bac97;
+  width: 20px;
+}
+
+.ict .skill-card:first-child .progress-bar {
+  height: 15%; /* HTML skill level */
+}
+
+.ict .skill-card:nth-child(2) .progress-bar {
+  height: 50%; /* CSS skill level */
+}
+
+.ict .skill-card:last-child .progress-bar {
+  height: 75%; /* JS skill level */
+}
+
+/* no Polish or English progress bars percentages, cause they are permanently at 100% */
+
+.lang .skill-card:nth-child(3) .progress-bar {
+  height: 65%; /* Finnish skill level */
+}
+
+.lang .skill-card:last-child .progress-bar {
+  height: 35%; /* Spanish skill level */
+}
+
+/* EDUCATION AND WORK EXPERIENCE */
+
+#education {
+  background: #294936;
+}
+
+#experience {
+  background: #437758;
+}
+
+.edu-exp-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.edu-exp-container h2 {
+  color: #212922;
+}
+
+.edu-exp-card {
+  flex: 1;
+  max-height: 65%;
+  max-width: 30%;
+  min-width: 300px;
+  background: #cbf4d9;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.edu-exp-date {
+  flex: 1;
+}
+
+.edu-exp-img {
+  flex: 4;
+}
+
+.edu-exp-img img {
+  height: 160px;
+  width: 300px;
+}
+
+.edu-exp-place {
+  flex: 1;
+}
+
+.edu-exp-focus {
+  flex: 2;
+}
+
+.edu-exp-descr {
+  flex: 6;
+  font-size: 1rem;
+}
+
+/* CONTACT */
+
+#contact {
+  background: #294936;
+  color: #cbf4d9;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+}
+
+.contact-img {
+  flex: 1;
+  height: 300px;
+}
+
+.contact-img img {
+  height: 100%;
+}
+
+.contact-description {
+  flex: 2;
+  width: 50vw;
+  white-space: normal;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.contact-list li {
+  list-style-type: none;
+}
+
+.contact-list li .btn {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 250px;
+}
+
+.contact-list li i {
+  font-size: 2rem;
+  /*  padding: 0 10px; */
+  flex: 1;
+}
+
+.contact-list li p {
+  flex: 4;
+}
+
+.contact-list li a {
+  text-decoration: none;
+}
+
+.cv-btn {
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  height: 3vh;
+  width: 100vw;
+  min-height: 1rem;
+  background-color: #212922;
+  color: #cbf4d9;
+  font-size: 0.7rem;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* to make sure it's over the space that pushed-off scrollbar leaves */
+}
+
+.temp {
+  position: fixed;
+  right: 0.5rem;
+}
+
+/* @media screen and (max-width 750px) {
+     check the proper width for it 
+    html {
+        height: 100%;
+    }
+}
+ */
